@@ -157,7 +157,7 @@ Research these pages about RDS Proxy:
 ## Development
 
 ```bash
-git clone https://github.com/AYM-TECH/pi-surf
+git clone https://github.com/iaptsiauri/pi-surf
 cd pi-surf
 npm install
 

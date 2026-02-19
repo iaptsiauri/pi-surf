@@ -17,9 +17,9 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/AYM-TECH/pi-surf"
+    "url": "https://github.com/iaptsiauri/pi-surf"
   },
-  "homepage": "https://github.com/AYM-TECH/pi-surf#readme",
+  "homepage": "https://github.com/iaptsiauri/pi-surf#readme",
   "author": "Ilia",
   "pi": {
     "extensions": ["./extensions"]
