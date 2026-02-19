@@ -1,0 +1,52 @@
+{
+  "name": "pi-surf",
+  "version": "0.1.0",
+  "description": "Surf the web from pi — clean URL fetching, pluggable search, and scout subagent that keeps noise out of your context",
+  "type": "module",
+  "keywords": [
+    "pi-package",
+    "pi-extension",
+    "web-research",
+    "web-search",
+    "web-fetch",
+    "readability",
+    "brave-search",
+    "subagent",
+    "surf"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AYM-TECH/pi-surf"
+  },
+  "homepage": "https://github.com/AYM-TECH/pi-surf#readme",
+  "author": "Ilia",
+  "pi": {
+    "extensions": ["./extensions"]
+  },
+  "scripts": {
+    "test": "npx tsx test/test-fetch-unit.ts && npx tsx test/test-search-providers.ts",
+    "test:live": "npx tsx test/test-fetch-live.ts",
+    "test:sdk": "npx tsx test/test-tools-sdk.ts",
+    "test:all": "npm test && npm run test:live && npm run test:sdk"
+  },
+  "dependencies": {
+    "@mozilla/readability": "^0.5.0",
+    "jsdom": "^26.0.0",
+    "turndown": "^7.2.0"
+  },
+  "peerDependencies": {
+    "@mariozechner/pi-coding-agent": "*",
+    "@mariozechner/pi-ai": "*",
+    "@mariozechner/pi-tui": "*",
+    "@sinclair/typebox": "*"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "files": [
+    "extensions/",
+    "README.md",
+    "LICENSE"
+  ]
+}
